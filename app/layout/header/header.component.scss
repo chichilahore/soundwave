@@ -1,0 +1,61 @@
+:host{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  padding-inline: 1em;
+  
+
+}
+
+  nav{
+    height: 90px;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+  }
+
+  ul{
+    padding-inline-start: 0;
+    display: grid;
+    align-items: center;
+  }
+
+  .isotipe{
+    grid-template-columns: 72px 1fr;
+  }
+
+  .isotipe img {
+    display: block;
+  }
+
+  .isotipe .logoText {
+    font-size: 1.25em;
+  }
+
+  .navBar{
+    grid-template-columns: 1fr 1fr;
+  }
+  li{
+    list-style: none;
+    padding: 0 1em;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+@media(max-width:600px){
+  :host{
+    width: 85%;
+
+  }
+  .logo{
+    height: 50px;
+  }
+
+  .logoText{
+    font-size: 1.15em;
+  }
+}

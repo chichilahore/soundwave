@@ -1,0 +1,42 @@
+:host {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    display: block;
+    margin: 0 auto;
+    
+  }
+ 
+
+  .circle-1 {
+    width: 25vw;
+    height: 25vw;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #bc3a801a;
+    z-index: -1;
+    bottom: 5vw;
+    left: 5vw;
+  }
+  
+  .circle-2{
+    width: 25vw;
+    height: 25vw;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #3457b21a;
+    z-index: -1;
+    top: 10vh;
+    left: 30vw;
+  }
+  
+  
+
+@media(max-width: 600px){
+      :host{
+        grid-template-columns: 1fr;
+        max-width: unset;
+
+      }
+
+  }

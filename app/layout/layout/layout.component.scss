@@ -1,0 +1,34 @@
+
+:host {
+    height: calc(100vh - 1rem);
+    display: block;
+    margin: 0 auto;
+    /*max-width: 1080px;
+    padding: 1rem 2rem 0rem;*/
+}
+
+
+// display inline es el display natural de escribir el texto y la imagen es un caracter más y todo esta en un alinea
+// es como cuando tienes texto e imagenes todo junto
+// porque no flex, lo unico que quiero es que cada uno sea un bloque, y con eso ya me sirve, lo que yo busco es que no
+// sea inline, flex y grid son modernidades de la programación, las ventajas de no ser iniline es no tener atributos de anchura
+// al inline no puedes definirle una altura, no tiene margin, no tinee margen, porque el proposito del inlen 
+// es poner un parrafo con emojis que son imagenes, que se deberian colcolar como letras, no ntienen margen, no dices que la n tiene un
+// margen, no puedes darle esos atributos que al block si
+//  porque son bloques, son bloques con medidas y margenes: un bloque
+// span es inline, el image es inline, porque es como poner imagenes a lado de textos, si no quieres 
+// eso tienes el block, para poner bien la imagen tendrías que usar un float
+// si defines el width solo se vería bien en una pantalla si tu width es variable hay menos posibilidades 
+// que aparezca la barra de scroll , es mejor no ponerle width, es mejor ponerle un max-width, es un límite
+// si tu ventana crece más de ese tamaño recién se fuelve fijo
+
+@media(max-width: 600px){
+    :host{
+        grid-template-columns: 1fr;
+        max-width: unset;
+    }
+
+}
+
+// max widht unset porque hay platformas que tienen estilos definidos y tienes que cancelarle para eliminar
+// estos atributos, es mpara revertir nuestro propio escritorio en movil

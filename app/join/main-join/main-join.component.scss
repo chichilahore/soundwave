@@ -1,0 +1,98 @@
+:host{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    height: calc(100vh - 90px - 103.75px);  
+    margin: auto;
+  }
+    
+  section {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 1;
+  }
+  p{
+    font-weight: 800;
+    font-size: 3.5em;
+  }
+
+  b{
+    color: #D3007B;
+  }
+
+  button{
+    background-color: #1762A7;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+  
+  }
+  button:hover{
+      background-color: #2180d8;
+  }
+  
+  form {
+    background-color: #202027;
+    padding: 1.5em 3em;
+    border-radius: 1em;
+    width: -webkit-fill-available;
+    display: grid;
+    grid-gap: 2em;
+    width: 80%;
+    height: 45%;
+  } 
+  
+  label {
+    font-weight: bold;
+    display: grid;
+    gap: 0.5em;
+  }
+  
+  input {
+    display: block;
+    width: calc(100% - 6px);
+    height: 2em;
+    background: transparent;
+    border: 0.3px solid rgba(0, 0, 255, 0.2);
+    border-radius: .25rem;
+  }
+  
+  
+  @media(max-width: 600px) {
+    :host{
+      height: calc(100vh - 90px - 54px);
+      width: 80%;
+    }
+    section {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+    }
+    form{
+      padding: 1em 2em;
+      height: 80%;
+    }
+
+    p{
+      margin: 0;
+      font-size: 3.8em;
+      font-weight: 800;
+    }
+
+    label{
+      width: 95%;
+      margin: auto;
+    }
+
+    button{
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  
